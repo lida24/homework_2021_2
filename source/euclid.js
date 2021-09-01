@@ -15,7 +15,7 @@ function gcd(x, y) {
 }
 
 /**
- * This function finds gcd of 2 numbers
+ * This function finds gcd of n numbers
  *
  * @param  {...number} numbers - n numbers
  * @returns {number}
