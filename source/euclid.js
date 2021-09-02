@@ -8,10 +8,8 @@
  * @param {number} y - second number
  * @returns {number}
  */
-function gcd(x, y) {
-  if (x !== 0) return gcd(y % x, x);
-  else return y;
-}
+const gcd = (x, y) =>
+  x !== 0 ? gcd(y % x, x) : y;
 
 /**
  * This function finds gcd of n numbers
