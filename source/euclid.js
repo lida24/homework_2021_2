@@ -9,9 +9,8 @@
  * @returns {number}
  */
 function gcd(x, y) {
-  if (x !== 0) {
-    return gcd(y % x, x);
-  } else return y;
+  if (x !== 0) return gcd(y % x, x);
+  else return y;
 }
 
 /**
@@ -20,6 +19,5 @@ function gcd(x, y) {
  * @param  {...number} numbers - n numbers
  * @returns {number}
  */
-const euclid = (...numbers) => numbers.reduce(function (max, current) {
-  return gcd(max, Math.abs(current));
-}, 0);
+const euclid = (...numbers) => numbers.reduce((max, current) =>
+    gcd(max, Math.abs(current)), 0);
